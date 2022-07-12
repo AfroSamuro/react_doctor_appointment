@@ -1,0 +1,76 @@
+.aside__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #003B72;
+    width: 190px;
+    height: 100vh;
+    font-size: 14px;
+}
+
+.menu__nav,
+.menu__bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__logo {
+    display: flex;
+    height: 55px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.nav__profile,
+.nav__docs,
+.nav__messages,
+.nav__tests,
+.nav__gtk,
+.bottom__help {
+    display: flex;
+    padding: 14px 0 14px;
+    margin-bottom: 10px;
+    align-items: center;
+    height: 46px;
+    padding-left: 20px;
+}
+
+.profile__img {
+    filter:
+        invert(100%) sepia(100%) saturate(0%) hue-rotate(112deg) brightness(1000%) contrast(104%);
+
+}
+
+.profile__text,
+.docs__text,
+.messages__text,
+.tests__text,
+.gtk__text,
+.help__text {
+    padding-left: 14px;
+}
+
+.nav__request {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: transparent;
+    background-color: #7761FF;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.bottom__help{
+    margin-bottom: 4px;
+}
+
+.bottom__logo {
+    padding: 0 0 16px 20px;
+}
+
+.selected {
+    /* filter: invert(38%) sepia(46%) saturate(1752%) hue-rotate(222deg) brightness(100%) contrast(103%); */
+    background-color: white;
+}
