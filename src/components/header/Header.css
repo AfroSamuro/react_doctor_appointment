@@ -1,0 +1,32 @@
+.header {
+    background-color: #50CAFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 28px;
+    line-height: 34px;
+    padding: 12px 0 10px 40px;
+}
+
+.header__func {
+    display: flex;
+    align-items: center;
+}
+
+.func__bell, .func__eye, .func__glass {
+    padding-right: 22px;
+    cursor: pointer;
+}
+
+.func__profile {
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.func__uncover {
+    padding-right: 40px;
+    cursor: pointer;
+}

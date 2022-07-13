@@ -6,3 +6,14 @@ body {
     font-family: 'Rubik', sans-serif;
     color: white;
 }
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content__main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

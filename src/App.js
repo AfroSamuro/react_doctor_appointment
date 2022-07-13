@@ -11,15 +11,16 @@ export default function App() {
 
     return (
         <BrowserRouter>
-            <AsideMenu />
-            <section>
-                <Header />
-                <Routes>
-                    <Route path='/' element={<ProfileMain />} />
-                    <Route path='/apps' element={''} />
-                </Routes>
-            </section>
-
+            <div className='content'>
+                <AsideMenu />
+                <section className='content__main'>
+                    <Header />
+                    <Routes>
+                        <Route path='/' element={<ProfileMain />} />
+                        <Route path='/apps' element={''} />
+                    </Routes>
+                </section>
+            </div>
         </BrowserRouter>
     )
 }
