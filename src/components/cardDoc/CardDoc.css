@@ -1,0 +1,64 @@
+.doc__card {
+    display: flex;
+    width: 476px;
+    height: 174px;
+    border: 2px solid #ebe7ff70;
+    line-height: 20px;
+}
+
+.doc__card:not(:first-child){
+  margin-left: 20px;
+}
+
+.card__details {
+    padding: 20px 0 0 20px;
+}
+
+.details__date {
+    display: flex;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.details__location {
+    font-weight: 300;
+    padding-top: 4px;
+}
+
+.details__doc {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.doc__person {
+    padding-left: 10px;
+}
+
+.person__fio {
+    font-weight: 500;
+}
+
+.person__spec {
+    color: #EBE7FF;
+}
+
+.card__cancel {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 20px 20px 0;
+}
+
+.cancel__button {
+    width: 98px;
+    height: 40px;
+    border-radius: 5px;
+    border: transparent;
+    background-color: #7761FF;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}

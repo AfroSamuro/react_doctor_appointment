@@ -71,7 +71,7 @@
 .roster__para::before {
     content: "•";
     color: #50CAFF;
-    /* font-size: 20px; */
+    padding-right: 10px;
 }
 
 .roster__para:not(:first-child) {

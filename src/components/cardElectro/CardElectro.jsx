@@ -4,7 +4,7 @@ export default function CardElectro(props) {
     const { title, description, list, logo } = props.data;
 
     return (
-        <div className='electro__card'>
+        <article className='electro__card'>
             <div className='card__logo'>
                 <img src={logo} alt="" />
             </div>
@@ -25,6 +25,6 @@ export default function CardElectro(props) {
                     </ul>
                 </div>
             </div>
-        </div>
+        </article>
     )
 }
