@@ -1,0 +1,19 @@
+.main__info {
+    color: black;
+font-size: 16px;
+
+}
+.info__electro {
+    padding-top: 36px;
+}
+
+.electro__title {
+    padding-left: 40px;
+}
+
+.electro__cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+
+}

@@ -1,0 +1,81 @@
+.electro__card {
+    display: flex;
+    width: 540px;
+    height: 184px;
+    margin-top: 16px;
+    border: 2px solid #ebe7ff70;
+    border-radius: 6px;
+}
+
+.electro__card:hover {
+    border: 2px solid #50CAFF;
+}
+
+.electro__card:not(:nth-child(odd)) {
+    margin-left: 16px ;
+}
+
+.card__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 134px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.electro__card:hover .card__logo {
+    background-color: #50CAFF;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 34px 0;
+    line-height: 24px;
+}
+
+.info__title {
+    font-size: 28px;
+    border-bottom: 2px solid #EBE7FF;
+    padding-bottom: 10px;
+    padding-top: 36px;
+}
+
+.electro__card:hover .info__title {
+    border-bottom: 2px solid #50CAFF;
+    padding-top: 20px;
+}
+
+.info__desc {
+    padding-top: 20px;
+    width: 324px;
+}
+
+.electro__card:hover .info__desc {
+    display: none;
+}
+
+.info__list {}
+
+.list__roster {
+    display: none;
+    list-style: none;
+    padding-top: 16px;
+}
+
+.electro__card:hover .list__roster {
+    display: block;
+}
+
+.roster__para::before {
+    content: "•";
+    color: #50CAFF;
+    /* font-size: 20px; */
+}
+
+.roster__para:not(:first-child) {
+    padding-top: 4px;
+}
