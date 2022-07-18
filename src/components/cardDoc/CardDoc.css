@@ -3,7 +3,9 @@
     width: 476px;
     height: 174px;
     border: 2px solid #ebe7ff70;
+    border-radius: 5px;
     line-height: 20px;
+    font-size: 14px;
 }
 
 .doc__card:not(:first-child){

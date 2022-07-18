@@ -1,20 +1,17 @@
 .appointments {
     display: flex;
     color: black;
+    padding-left: 20px;
 }
 
-.appointments__apps .doc__card {
+.appointments__apps .doc__card:not(:first-child) {
     margin: 16px 0 0 0;
-}
-
-.appointments__apps {
-    margin-left: 18px;
 }
 
 .apps__top {
     display: flex;
     align-items: center;
-    padding: 16px 0 0 22px;
+    padding: 16px 0 16px 22px;
     text-decoration: none;
     width: 150px;
     color: black;
@@ -22,6 +19,7 @@
 
 .top__title {
     padding-left: 14px;
+
 }
 
 .apps__docs {
