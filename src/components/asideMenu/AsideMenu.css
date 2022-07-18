@@ -6,7 +6,6 @@
     width: 190px;
     height: 100vh;
     font-size: 14px;
-    padding-right: 20px;
 }
 
 .menu__nav,
@@ -17,7 +16,7 @@
 
 .nav__logo {
     display: flex;
-    height: 55px;
+    height: 56px;
     align-items: center;
     padding-left: 20px;
 }
@@ -56,7 +55,7 @@
     width: 150px;
     height: 40px;
     border-radius: 5px;
-    margin-left: 20px;
+    margin: 0 20px 0;
     border: transparent;
     background-color: #7761FF;
     color: white;
@@ -75,6 +74,9 @@
 }
 
 .selected {
-    /* filter: invert(38%) sepia(46%) saturate(1752%) hue-rotate(222deg) brightness(100%) contrast(103%); */
     background-color: white;
+    color: #7761FF;
+}
+.selectedImg{
+    filter: invert(34%) sepia(69%) saturate(1557%) hue-rotate(227deg) brightness(103%) contrast(101%);
 }

@@ -16,8 +16,8 @@ export default function AsideMenu() {
                 <Link className='nav__logo' to={'/'} target='_self'>
                     <img src={logo} alt="logo" />
                 </Link>
-                <div className='nav__profile' >
-                    <div className='profile__img'>
+                <div className='nav__profile selected' >
+                    <div className='profile__img selectedImg'>
                         <img src={hearth} alt="" />
                     </div>
                     <p className='profile__text'>
