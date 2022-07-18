@@ -39,17 +39,9 @@ export default function App() {
             docFio: 'Малушко Т. Н.',
             docSpec: 'Хирургия'
         },
+
         {
             id: 4,
-            date: '17.07.2022',
-            time: '18:30',
-            location: 'СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А',
-            docPhoto: doc1,
-            docFio: 'Малушко Т. Н.',
-            docSpec: 'Хирургия'
-        },
-        {
-            id: 5,
             date: '18.07.2022',
             time: '19:30',
             location: 'СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А',
@@ -57,15 +49,28 @@ export default function App() {
             docFio: 'Малушко Т. Н.',
             docSpec: 'Хирургия'
         },
-    ]
+        {
+            id: 5,
+            date: '17.07.2022',
+            time: '18:30',
+            location: 'СПБ ГБУЗ "Городская поликлиника №25", пр. Солидарности, д. 1, к. 1, лит. А',
+            docPhoto: doc1,
+            docFio: 'Малушко Т. Н.',
+            docSpec: 'Хирургия'
+        },
+    ].sort((a, b) => {
+        a = a.date.split('.').reverse().join('');
+        b = b.date.split('.').reverse().join('');
+        return a > b ? 1 : a < b ? -1 : 0;
+    })
 
     const [docApps, setDocApps] = useState(apps)
 
     const deleteApp = (e) => {
         const id = e.target.getAttribute('id');
-        setDocApps(docApps.filter(app => 
+        setDocApps(docApps.filter(app =>
             app.id !== +id,
-            ))
+        ))
     }
 
     return (
@@ -75,8 +80,8 @@ export default function App() {
                 <section className='content__main'>
                     <Header />
                     <Routes>
-                        <Route path='/' element={<ProfileMain apps={docApps} removeApp={deleteApp}/>} />
-                        <Route path='/apps' element={<ProfileApps apps={docApps} removeApp={deleteApp}/>} />
+                        <Route path='/' element={<ProfileMain apps={docApps} removeApp={deleteApp} />} />
+                        <Route path='/apps' element={<ProfileApps apps={docApps} removeApp={deleteApp} />} />
                     </Routes>
                 </section>
             </div>
