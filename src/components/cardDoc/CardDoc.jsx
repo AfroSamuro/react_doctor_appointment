@@ -4,6 +4,7 @@ import './CardDoc.css'
 export default function CardDoc(props) {
 
     const {
+        id,
         date,
         time,
         location,
@@ -12,12 +13,15 @@ export default function CardDoc(props) {
         docSpec
     } = props.info
 
+    const {removeShowedApp} = props
+
+
     return (
-        <article className='doc__card'>
+        <article className='doc__card' id={id}>
             <div className='card__details'>
                 <div className='details__date'>
                     <div className='date__day'>
-                        {date.slice(0, 6)+date.slice(-2)} |&nbsp;
+                        {date.slice(0, 6) + date.slice(-2)} |&nbsp;
                     </div>
                     <div className='date__time'>
                         {time}
@@ -40,8 +44,8 @@ export default function CardDoc(props) {
                     </div>
                 </div>
             </div>
-            <div className='card__cancel'>
-                <button className='cancel__button'>
+            <div className='card__cancel' >
+                <button className='cancel__button' onClick={removeShowedApp} id={id}>
                     Отменить
                 </button>
             </div>

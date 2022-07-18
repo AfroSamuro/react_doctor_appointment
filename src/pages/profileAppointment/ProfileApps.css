@@ -15,6 +15,9 @@
     display: flex;
     align-items: center;
     padding: 16px 0 0 22px;
+    text-decoration: none;
+    width: 150px;
+    color: black;
 }
 
 .top__title {

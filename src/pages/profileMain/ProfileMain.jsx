@@ -52,7 +52,6 @@ export default function ProfileMain(props) {
         },
     ];
 
-
     return (
         <div className='main__info'>
             <section className='info__apps'>
@@ -61,7 +60,7 @@ export default function ProfileMain(props) {
                 </p>
                 <div className='apps__cards'>
                     {props.apps.slice(0,2).map(app =>
-                        <CardDoc info={app} />
+                        <CardDoc info={app} removeShowedApp={props.removeApp} key={app.id}/>
                     )
                     }
                     {props.apps.length > 0 ?
