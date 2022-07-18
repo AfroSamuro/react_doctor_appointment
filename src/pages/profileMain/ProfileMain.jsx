@@ -5,6 +5,7 @@ import resultLogo from '../../images/lab 1.svg'
 import addLogo from '../../images/add (1) 1.svg'
 import historyLogo from '../../images/clock 1.svg'
 import CardDoc from '../../components/cardDoc/CardDoc'
+import { Link } from 'react-router-dom'
 
 export default function ProfileMain(props) {
 
@@ -84,9 +85,9 @@ export default function ProfileMain(props) {
 
                                 }
                             </p>
-                            <a className='more__link'>
+                            <Link className='more__link' to={'/apps'} target='_self'>
                                 Подробнее
-                            </a>
+                            </Link>
                         </div> :
                         <p className='cards__empty'>
                             Нет активных записей

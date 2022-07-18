@@ -17,7 +17,7 @@ export default function CardDoc(props) {
             <div className='card__details'>
                 <div className='details__date'>
                     <div className='date__day'>
-                        {date} |&nbsp;
+                        {date.slice(0, 6)+date.slice(-2)} |&nbsp;
                     </div>
                     <div className='date__time'>
                         {time}

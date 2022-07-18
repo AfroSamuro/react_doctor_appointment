@@ -1,0 +1,55 @@
+.appointments {
+    display: flex;
+    color: black;
+}
+
+.appointments__apps .doc__card {
+    margin: 16px 0 0 0;
+}
+
+.appointments__apps {
+    margin-left: 18px;
+}
+
+.apps__top {
+    display: flex;
+    align-items: center;
+    padding: 16px 0 0 22px;
+}
+
+.top__title {
+    padding-left: 14px;
+}
+
+.apps__docs {
+    width: 506px;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.docs__showAll {
+    color: #50CAFF;
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 16px 0 0 316px;
+    cursor: pointer;
+}
+
+.docs__noApps {
+    font-size: 30px;
+    padding: 60px 0 0 22px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #EBE7FF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #003B72;
+    border-radius: 5px;
+}

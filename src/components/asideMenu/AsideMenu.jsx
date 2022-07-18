@@ -6,15 +6,16 @@ import speak from '../../images/speak 1.svg'
 import test from '../../images/test 1.svg'
 import book from '../../images/book 1.svg'
 import help from '../../images/help 1.svg'
+import { Link } from 'react-router-dom'
 
 export default function AsideMenu() {
 
     return (
         <aside className='aside__menu'>
             <nav className='menu__nav'>
-                <div className='nav__logo'>
+                <Link className='nav__logo' to={'/'} target='_self'>
                     <img src={logo} alt="logo" />
-                </div>
+                </Link>
                 <div className='nav__profile' >
                     <div className='profile__img'>
                         <img src={hearth} alt="" />
